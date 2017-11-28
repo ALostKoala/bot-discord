@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1b111bae-c280-4600-a5ad-6d9f5782f958}</ProjectGuid>
+    <ProjectHome>..\</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>index.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Default</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="test.txt" />
+    <Content Include="jspro.htm" />
+    <Content Include="package.json" />
+    <Compile Include="index.js" />
+    <Content Include="ffmpeg\README.txt" />
+    <Content Include="opus\opusdec.html" />
+    <Content Include="opus\opusenc.html" />
+    <Content Include="opus\opusinfo.html" />
+    <Content Include="ffmpeg\doc\developer.html" />
+    <Content Include="ffmpeg\doc\faq.html" />
+    <Content Include="ffmpeg\doc\fate.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-all.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-bitstream-filters.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-codecs.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-devices.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-filters.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-formats.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-protocols.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-resampler.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-scaler.html" />
+    <Content Include="ffmpeg\doc\ffmpeg-utils.html" />
+    <Content Include="ffmpeg\doc\ffmpeg.html" />
+    <Content Include="ffmpeg\doc\ffplay-all.html" />
+    <Content Include="ffmpeg\doc\ffplay.html" />
+    <Content Include="ffmpeg\doc\ffprobe-all.html" />
+    <Content Include="ffmpeg\doc\ffprobe.html" />
+    <Content Include="ffmpeg\doc\general.html" />
+    <Content Include="ffmpeg\doc\git-howto.html" />
+    <Content Include="ffmpeg\doc\libavcodec.html" />
+    <Content Include="ffmpeg\doc\libavdevice.html" />
+    <Content Include="ffmpeg\doc\libavfilter.html" />
+    <Content Include="ffmpeg\doc\libavformat.html" />
+    <Content Include="ffmpeg\doc\libavutil.html" />
+    <Content Include="ffmpeg\doc\libswresample.html" />
+    <Content Include="ffmpeg\doc\libswscale.html" />
+    <Content Include="ffmpeg\doc\nut.html" />
+    <Content Include="ffmpeg\doc\platform.html" />
+    <Content Include="ffmpeg\licenses\bzip2.txt" />
+    <Content Include="ffmpeg\licenses\fontconfig.txt" />
+    <Content Include="ffmpeg\licenses\freetype.txt" />
+    <Content Include="ffmpeg\licenses\frei0r.txt" />
+    <Content Include="ffmpeg\licenses\gme.txt" />
+    <Content Include="ffmpeg\licenses\gnutls.txt" />
+    <Content Include="ffmpeg\licenses\lame.txt" />
+    <Content Include="ffmpeg\licenses\libass.txt" />
+    <Content Include="ffmpeg\licenses\libbluray.txt" />
+    <Content Include="ffmpeg\licenses\libbs2b.txt" />
+    <Content Include="ffmpeg\licenses\libcaca.txt" />
+    <Content Include="ffmpeg\licenses\libgsm.txt" />
+    <Content Include="ffmpeg\licenses\libiconv.txt" />
+    <Content Include="ffmpeg\licenses\libilbc.txt" />
+    <Content Include="ffmpeg\licenses\libmfx.txt" />
+    <Content Include="ffmpeg\licenses\libmodplug.txt" />
+    <Content Include="ffmpeg\licenses\libtheora.txt" />
+    <Content Include="ffmpeg\licenses\libvorbis.txt" />
+    <Content Include="ffmpeg\licenses\libvpx.txt" />
+    <Content Include="ffmpeg\licenses\libwebp.txt" />
+    <Content Include="ffmpeg\licenses\opencore-amr.txt" />
+    <Content Include="ffmpeg\licenses\openh264.txt" />
+    <Content Include="ffmpeg\licenses\openjpeg.txt" />
+    <Content Include="ffmpeg\licenses\opus.txt" />
+    <Content Include="ffmpeg\licenses\rtmpdump.txt" />
+    <Content Include="ffmpeg\licenses\snappy.txt" />
+    <Content Include="ffmpeg\licenses\soxr.txt" />
+    <Content Include="ffmpeg\licenses\speex.txt" />
+    <Content Include="ffmpeg\licenses\twolame.txt" />
+    <Content Include="ffmpeg\licenses\vid.stab.txt" />
+    <Content Include="ffmpeg\licenses\vo-amrwbenc.txt" />
+    <Content Include="ffmpeg\licenses\wavpack.txt" />
+    <Content Include="ffmpeg\licenses\x264.txt" />
+    <Content Include="ffmpeg\licenses\x265.txt" />
+    <Content Include="ffmpeg\licenses\xavs.txt" />
+    <Content Include="ffmpeg\licenses\xvid.txt" />
+    <Content Include="ffmpeg\licenses\xz.txt" />
+    <Content Include="ffmpeg\licenses\zimg.txt" />
+    <Content Include="ffmpeg\licenses\zlib.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ffmpeg" />
+    <Folder Include="ffmpeg\bin" />
+    <Folder Include="ffmpeg\doc" />
+    <Folder Include="ffmpeg\doc\examples" />
+    <Folder Include="ffmpeg\licenses" />
+    <Folder Include="ffmpeg\presets" />
+    <Folder Include="musique" />
+    <Folder Include="opus" />
+    <Folder Include="save" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
